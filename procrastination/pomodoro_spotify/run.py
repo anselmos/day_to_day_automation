@@ -6,10 +6,13 @@
 #
 # Distributed under terms of the MIT license.
 
-"""
+from selenium import webdriver
+from spotify_playlist import SpotifyPlaylist
 
-"""
 def main():
-    self.driver = webdriver.Firefox()
-    spotify_page = SpotifyPlaylist(self.driver)
-    spotify_page.open_album(56QpDqnTzXqMn3Jjxv73lz)
+    driver = webdriver.Firefox()
+    spotify_page = SpotifyPlaylist(driver)
+    spotify_page.open_album('56QpDqnTzXqMn3Jjxv73lz')
+
+if __name__ == "__main__":
+    main()

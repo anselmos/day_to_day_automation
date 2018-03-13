@@ -15,13 +15,12 @@ class SpotifyPlaylist(object):
     album_uri = "https://open.spotify.com/album/"
     playlist_uri = "https://open.spotify.com/playlist/"
 
-    def __init__(self, driver, playlist_id):
+    def __init__(self, driver):
         """TODO: to be defined1. """
         self.driver = driver
-        self.playlist_id = playlist_id
 
-    def open_playlist(self):
-        self.driver.get(self.playlist_uri + self.playlist_id)
+    def open_playlist(self, playlist_id):
+        self.driver.get(self.playlist_uri + playlist_id)
 
     def open_album(self, album_id):
         self.driver.get(self.album_uri + album_id)
