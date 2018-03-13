@@ -12,6 +12,8 @@ name = "pypi"
 [packages]
 
 selenium = "*"
+pageobject = "*"
+page-objects = "*"
 
 
 [requires]
